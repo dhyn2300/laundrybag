@@ -1,0 +1,4 @@
+/* Tailwind CSS Import 및 기타 스타일 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
