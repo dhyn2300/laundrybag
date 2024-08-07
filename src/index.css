@@ -2,3 +2,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* index.css */
+
+html {
+    font-size: 125%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem; /* 기본 font-size의 2배 */
+  }
+  
+  button {
+    font-size: 1rem; /* 기본 font-size의 배율 */
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  /* 추가적인 스타일들을 여기에 추가하세요 */
