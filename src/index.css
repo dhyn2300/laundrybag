@@ -6,7 +6,7 @@
 /* index.css */
 
 html {
-    font-size: 125%;
+    font-size: 110%;
   }
   
   body {
@@ -27,4 +27,32 @@ html {
     text-align: center;
   }
   
-  /* 추가적인 스타일들을 여기에 추가하세요 */
+
+/* 전광판 애니메이션 */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #ffffff; /* 배경색 흰색 */
+}
+
+.marquee {
+  display: flex;
+  width: 200%;  /* 두 배로 넓힘 */
+  animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 3rem; /* 큰 폰트 크기 설정 */
+  font-weight: bold; /* 텍스트 볼드 */
+  color: darkslategrey; /* 텍스트 검정색 */
+  padding: 0 2rem;  /* 텍스트 사이의 간격. 필요에 따라 조정 */
+}
